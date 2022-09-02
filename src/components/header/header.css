@@ -1,0 +1,51 @@
+.container-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.name-header {
+  grid-area: 1 / 1 / 2 / 2;
+  text-align: center;
+}
+
+.sections-header {
+  grid-area: 1 / 2 / 2 / 5;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  font-size: 3vh;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.4s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.social-header {
+  grid-area: 1 / 5 / 2 / 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+  margin-top: -0.5rem;
+}
+
+.social-icons:hover {
+  cursor: pointer;
+}
